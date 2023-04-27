@@ -50,5 +50,17 @@ awk -F "/" '/^\// {print $NF}' /etc/shells
 
 
 
+## Multiple Commands
+
+## We can use a semicolon to seperate multiple commands
+echo "Hello Wolrd!" | awk '{$2="Friend"; print $0}'
+## World is put into the $2 variable and then reassigned to friend, then the whole line is printed.
+
+
+
+
+
+
+
 
 
